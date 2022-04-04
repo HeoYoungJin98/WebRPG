@@ -6,34 +6,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Status</title>
   </head>
   <body>
     <div id="header">
       <p id="header_name">Status</p>
     </div>
-    <div id="body">
+    <div id="body_space">
       <section class="Status_section"><!-- Status Space -->
         <div class = "STR"><!-- STR Space -->
           <label for="Status_STR" class="label">STR</label>
-          <input type="text" class="Status" name="Status_STR" disabled value="5">
-          <button type="button" class="button button_plus_1" name="button_plus_1">+1</button>
-          <button type="button" class="button button_plus_Half" name="button_plus_Half">Half</button>
-          <button type="button" class="button button_plus_All" name="button_plus_All">All</button>
+          <input type="text" class="Status" id="Status_STR" disabled>
+          <button type="button" class="button STR_btn" name="button_plus_1">+1</button>
+          <button type="button" class="button STR_btn" name="button_plus_Half">Half</button>
+          <button type="button" class="button STR_btn" name="button_plus_All">All</button>
         </div>
         <div class = "DEF"><!-- DEF Space -->
           <label for="Status_DEF" class="label">DEF</label>
-          <input type="text" class="Status" name="Status_DEF" disabled value="5">
-          <button type="button" class="button button_plus_1" name="button_plus_1">+1</button>
-          <button type="button" class="button button_plus_Half" name="button_plus_Half">Half</button>
-          <button type="button" class="button button_plus_All" name="button_plus_All">All</button>
+          <input type="text" class="Status" id="Status_DEF" disabled>
+          <button type="button" class="button DEF_btn" name="button_plus_1">+1</button>
+          <button type="button" class="button DEF_btn" name="button_plus_Half">Half</button>
+          <button type="button" class="button DEF_btn" name="button_plus_All">All</button>
         </div>
         <div class = "HP"><!-- HP Space -->
           <label for="Status_HP" class="label">HP</label>
-          <input type="text" class="Status" name="Status_DEF" disabled value="5">
-          <button type="button" class="button button_plus_1" name="button_plus_1">+1</button>
-          <button type="button" class="button button_plus_Half" name="button_plus_Half">Half</button>
-          <button type="button" class="button button_plus_All" name="button_plus_All">All</button>
+          <input type="text" class="Status" id="Status_HP" disabled>
+          <button type="button" class="button HP_btn" name="button_plus_1">+1</button>
+          <button type="button" class="button HP_btn" name="button_plus_Half">Half</button>
+          <button type="button" class="button HP_btn" name="button_plus_All">All</button>
         </div>
         <div><!-- SP,Info-->
           <b class="Formula">Half는 보유 SP의 절반을, All은 모든 SP를 스탯에 투자합니다.</b>
@@ -44,15 +45,15 @@
       <aside class="Status_Info"><!-- Final Status -->
         <div class="Final_ATK"><!-- ATK -->
           <label for="ATK" class="label">ATK:</label>
-          <b id="ATK" class="Info">1</b></br>
+          <b id="ATK" class="Info">최종 공격력</b></br>
         </div>
         <div class="Final_DEF"><!-- DEF -->
           <label for="DEF" class="label">DEF:</label>
-          <b id="DEF" class="Info">1</b></br>
+          <b id="DEF" class="Info">최종 방어력</b></br>
         </div>
         <div class="Fianl_HP"><!-- HP -->
           <label for="HP" class="label">HP:</label>
-          <b id="HP" class="Info">1</b>
+          <b id="HP" class="Info">최종 체력</b>
         </div>
         <div id="Formula"><!-- Final Status Info -->
           <b class="Formula">{(Status * LV) + Equip}로 결정됩니다.</b>
@@ -60,7 +61,17 @@
       </aside>
     </div>
     <div class="Equip_Info"><!-- Equip -->
-      
+      <p class="Formula">착용중인 장비</p>
+      <label for="Equip_WP" class="Formula">무기: </label>
+      <b id="Equip_WP" class="Info"></b>
+      <label for="WP_ATK" class="Formula">무기 공격력: </label>
+      <b id="WP_ATK" class="Info"></b><br>
+      <label for="Equip_Am" class="Formula">방어구: </label>
+      <b id="Equip_Am" class="Info"></b>
+      <label for="Am_DEF" class="Formula">방어구 방어력: </label>
+      <b id="Am_DEF" class="Info"></b>
+      <label for="Am_HP" class="Formula">방어구 체력: </label>
+      <b id="Am_HP" class="Info"></b>
     </div>
-  </body>
+    <script src="Status_up.js"></script>
 </html>

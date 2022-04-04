@@ -7,14 +7,14 @@
 
 .Status_section{
   border: 1px solid black;
+  width: 58%;
   float: left;
-  width: 60%;
 }
 
 .Status_Info{
   border: 1px solid black;
-  float: right;
   width: 39%;
+  float: right;
 }
 
 .label{
@@ -23,7 +23,7 @@
 
 .Status{
   text-align: right;
-  width: 60%;
+  width: 50%;
   font-size: 15px;
   color: blue;
 }
@@ -32,6 +32,7 @@
   width: 10%;
   background-color: skyblue;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .Info{
@@ -40,4 +41,11 @@
 
 .Formula{
   font-family: 'Jua', sans-serif;
+}
+
+.Equip_Info{
+  display: block;
+  border: 1px solid black;
+  clear: both;
+  margin-top: 3px;
 }
