@@ -1,0 +1,43 @@
+#header_name{
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 1%
+}
+
+.Status_section{
+  border: 1px solid black;
+  float: left;
+  width: 60%;
+}
+
+.Status_Info{
+  border: 1px solid black;
+  float: right;
+  width: 39%;
+}
+
+.label{
+  font-family: 'Jua', sans-serif;
+}
+
+.Status{
+  text-align: right;
+  width: 60%;
+  font-size: 15px;
+  color: blue;
+}
+
+.button{
+  width: 10%;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+
+.Info{
+  color: blue;
+}
+
+.Formula{
+  font-family: 'Jua', sans-serif;
+}
